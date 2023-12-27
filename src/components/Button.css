@@ -1,0 +1,28 @@
+.setNumButton button{
+    width: 60px;
+    margin: 10px;
+    padding: 10px auto;
+    text-align: center;
+    font-size: 1.5em;
+    /* display: flex;
+    justify-content: center; */
+    background-color: #daf7f7;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #4c4e4e;
+    color: #5a3876;
+}
+.setNumButton button:active{
+    transform: translateY(1px);
+    box-shadow: 5px 5px 10px #2d2e2e;
+    
+}
+.setNumButton{
+    margin: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
