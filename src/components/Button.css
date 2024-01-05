@@ -19,10 +19,20 @@
     
 }
 .setNumButton{
+    
     margin: 0;
     width: 200px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.totPrice{
+    padding: 20px;
+    margin: 10px 40px;
+    border: 1px solid #5a3876;
+    border-radius: 5px;
+    text-align: center;
+    color: #daf7f7;
+    background-color: hsl(215, 81%, 20%);
 }

@@ -1,6 +1,7 @@
 import Card from "./components/Card"
 import Button from "./components/button"
 import "./App.css"
+import Products from "./components/Products"
 
 
 function App() {
@@ -14,15 +15,31 @@ function App() {
     
     return(
         <div className="container">
+        <article className="basket">
+            <h1><b>Basket</b></h1>
             {
                 costList.map( item => {
                     // return( <Card type={item.type} price={item.price}
                            return <Card key={item.id} type={item.type} price={item.price} image={item.image} />}
-                    )
-                  
-                           }
-                           
+            )}
+
+             <h1>Total Price : </h1>              
             
+        </article>
+
+        <section className="products">
+            <h1><b>Products</b></h1>
+            {
+                costList.map( item => {
+                    
+                           return (
+                            <Products key={item.id} type={item.type} price={item.price} image={item.image} />
+                            
+
+                )}
+            )}
+                           
+        </section>
         </div>
     )
 }

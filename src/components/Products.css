@@ -1,0 +1,27 @@
+.card-container{
+    background-color: #00ffff18;
+    border: 2px solid #8080809c;
+    padding: 20px;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-container img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 50%;
+    
+    
+}
+.addButton{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00d5ff;
+    font-size: 1em;
+    cursor: pointer;
+}

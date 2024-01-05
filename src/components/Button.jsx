@@ -23,15 +23,21 @@ const Button = ({price}) => {
     const decTot = ()=> {
         sum > price ? totalPrice(sum - price) : totalPrice(price)
     }
-    
+
+    let array = []
+    console.log(array.push(sum))
   return (
+    <>
     <div className='setNumButton'>
         <button onClick={()=>{incNumber(); incTot()}}>+</button>
         <h2>{count}</h2>
         <button onClick={()=>{decNumber(); decTot()}}>-</button>
-        <h2>total price: {sum}</h2>
-        {console.log(sum)}
     </div>
+    <div className='totPrice'>
+        <h2>total price: {sum}</h2>
+        
+    </div>
+    </>
   )
 }
 
